@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>MoveCar - Aluguéis</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <h1>📋 Lista de Aluguéis</h1>
+  
+  <nav>
+    <a href="index.html">🏠 Início</a>
+    <a href="carros.html">🚘 Carros</a>
+  </nav>
+
+  <table id="tabela-alugueis">
+    <thead>
+    
+      <tr>
+        <th>ID</th>
+        <th>Cliente</th>
+        <th>Carro</th>
+        <th>Data Início</th>
+        <th>Data Fim</th>
+        <th>Valor Total</th>
+        <th>Ações</th>
+      </tr>
+      
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>➕ Registrar Novo Aluguel</h2>
+  
+  <form id="form-aluguel">
+  
+    <input type="text" id="nomeCliente" placeholder="Nome do Cliente" required>
+    <select id="carroId"></select>
+    <input type="date" id="dataInicio" required>
+    <input type="date" id="dataFim" required>
+    <input type="number" id="valorTotal" placeholder="Valor Total" required step="0.01">
+    
+    <button type="submit">Cadastrar</button>
+    
+  </form>
+
+  <!-- Modal de edição de aluguel -->
+  <div id="modal-edicao-aluguel" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+      <h2>Editar Aluguel</h2>
+      
+      <form id="form-edicao-aluguel">
+      
+        <input type="hidden" id="edit-aluguel-id">
+        <input type="text" id="edit-nomeCliente" placeholder="Nome do Cliente" required>
+        <select id="edit-carroId"></select>
+        <input type="date" id="edit-dataInicio" required>
+        <input type="date" id="edit-dataFim" required>
+        <input type="number" id="edit-valorTotal" placeholder="Valor Total" required step="0.01">
+        
+        <button type="submit">Salvar Alterações</button>
+        
+      </form>
+    </div>
+  </div>
+</body>
+</html>
