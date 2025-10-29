@@ -2,20 +2,21 @@
 
 ## 📋 Tópicos
 
-- [Descrição](#-descrição)
-- [Arquitetura do Sistema](#-arquitetura-do-sistema)
-- [Funcionalidades](#-funcionalidades)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Requisitos do Sistema](#-requisitos-do-sistema)
-- [Instalação e Execução](#-instalação-e-execução)
-- [Banco de Dados](#-banco-de-dados)
-- [Geração de Relatórios PDF](#-geração-de-relatórios-pdf)
-- [Segurança e Login](#-segurança-e-login)
-- [Desenvolvedor](#-desenvolvedor)
-- [Licença](#-licença)
+- [Descrição](#descricao)
+- [Arquitetura do Sistema](#arquitetura-do-sistema)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Requisitos do Sistema](#requisitos-do-sistema)
+- [Instalação e Execução](#instalacao-e-execucao)
+- [Banco de Dados](#banco-de-dados)
+- [Geração de Relatórios PDF](#geracao-de-relatorios-pdf)
+- [Segurança e Login](#seguranca-e-login)
+- [Desenvolvedor](#desenvolvedor)
+- [Licença](#licenca)
 
 ---
 
+<a id="descricao"></a>
 ## 🧩 Descrição
 
 O **MoveCar** é um sistema web completo de **gerenciamento de aluguéis de veículos**, desenvolvido em **Java com Spring Boot**, seguindo o padrão de arquitetura **MVC (Model-View-Controller)**.  
@@ -24,6 +25,7 @@ O objetivo do projeto é proporcionar uma aplicação corporativa simplificada, 
 
 ---
 
+<a id="arquitetura-do-sistema"></a>
 ## 🏗️ Arquitetura do Sistema
 
 O projeto segue a **arquitetura em três camadas (MVC)**:
@@ -34,6 +36,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
 
 ---
 
+<a id="funcionalidades"></a>
 ## ⚙️ Funcionalidades
 
 - **Autenticação e autorização de usuários**
@@ -51,6 +54,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
 
 ---
 
+<a id="tecnologias-utilizadas"></a>
 ## 💻 Tecnologias Utilizadas
 
 | Camada | Tecnologia |
@@ -64,6 +68,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
 
 ---
 
+<a id="requisitos-do-sistema"></a>
 ## 🧰 Requisitos do Sistema
 
 - **Java JDK 21** ou superior  
@@ -74,6 +79,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
 
 ---
 
+<a id="instalacao-e-execucao"></a>
 ## 🚀 Instalação e Execução
 
 1. **Clone o repositório:**
@@ -115,6 +121,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
 
    No arquivo **SecurityConfig** o login e a senha podem ser alterados através dos campos **.username** e **.password**
 
+<a id="banco-de-dados"></a>
 ## 💾 Banco de Dados
 
   **Tabelas principais:**
@@ -123,6 +130,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
 
   - rental: registro de aluguéis e vínculo com carros.
 
+<a id="geracao-de-relatorios-pdf"></a>
 ## 📄 Geração de Relatórios PDF
 
   **Relatórios criados com OpenPDF via endpoint:**
@@ -136,6 +144,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
   - Três carros/aluguéis por linha.
   - Os valores monetários são formatados automaticamente com duas casas decimais.
 
+<a id="seguranca-e-login"></a>
 ## 🔐 Segurança e Login
 
   **O sistema possui controle de acesso:**
@@ -146,6 +155,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
 
   Autenticação simples baseada em sessão e validação no front-end com JavaScript.
 
+<a id="desenvolvedor"></a>
 ## 👨‍💻 Desenvolvedor
 
   **Luiz Rodrigo Melo de Freitas Junior**
@@ -154,6 +164,7 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
     
   - LinkedIn: Luiz Rodrigo
 
+<a id="licenca"></a>
 ## 📚 Licença
 
   Este projeto está licenciado sob a licença **MIT**
