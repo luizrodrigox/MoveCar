@@ -26,10 +26,9 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/alugueis/**", "/api/carros/**").authenticated()
-                .anyRequest().permitAll()
-            )
-            .httpBasic(Customizer.withDefaults());
-        return http.build();
-    }
+            .anyRequest().permitAll()
+        );
+
+    return http.build();
+}
 }
