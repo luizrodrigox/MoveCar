@@ -1,5 +1,5 @@
-const API_CARROS = "http://localhost:8080/api/carros";
-const API_ALUGUEIS = "http://localhost:8080/api/alugueis";
+const API_CARROS = "/api/carros";
+const API_ALUGUEIS = "/api/alugueis";
 
 async function carregarCarros() {
 	
