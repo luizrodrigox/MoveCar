@@ -1,0 +1,17 @@
+# Arquivos gerados pelo Maven
+target/
+
+# Arquivos de configuração de IDE
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
