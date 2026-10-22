@@ -7,15 +7,11 @@ import com.movecar.repository.RentalRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
 public class RentalService {
     private final RentalRepository rentalRepo;
     private final CarRepository carRepo;
-    
-    @Autowired
-    private RentalRepository repo;
 
     public RentalService(RentalRepository rentalRepo, CarRepository carRepo) {
         this.rentalRepo = rentalRepo;
@@ -36,7 +32,7 @@ public class RentalService {
     }
     
     public Optional<Rental> buscarPorId(Long id) {
-        return repo.findById(id);
+        return rentalRepo.findById(id);
     }
 
     public Rental atualizar(Long id, Rental aluguel) {
