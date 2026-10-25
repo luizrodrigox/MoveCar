@@ -11,6 +11,7 @@
 - [Banco de Dados](#banco-de-dados)
 - [Geração de Relatórios PDF](#geracao-de-relatorios-pdf)
 - [Segurança e Login](#seguranca-e-login)
+- [Testes Automatizados e Integração Contínua (CI/CD)](#testes-automatizados-e-integracao-continua)
 - [Desenvolvedor](#desenvolvedor)
 - [Licença](#licenca)
 
@@ -154,6 +155,34 @@ O projeto segue a **arquitetura em três camadas (MVC)**:
   - Usuários não autenticados só conseguem gerar relatório.
 
   Autenticação simples baseada em sessão e validação no front-end com JavaScript.
+
+<a id="testes-automatizados-e-integracao-continua"></a>
+## Testes Automatizados e Integração Contínua (CI/CD)
+
+  O projeto MoveCar conta com testes automatizados para verificar o funcionamento dos serviços do backend e das funcionalidades principais do frontend, contribuindo para a qualidade e a confiabilidade da aplicação.
+
+  **Testes implementados:**
+  - **Backend:** 16 testes unitários utilizando JUnit 5 e Mockito, distribuídos entre os serviços de carros e aluguéis.
+
+  - **Frontend:** 7 testes automatizados utilizando o test runner nativo do Node.js, verificando endpoints da API, funções relacionadas a carros e aluguéis, métodos HTTP, eventos de formulários, navegação entre páginas e funcionalidades de relatórios.
+
+  Ao todo, o projeto possui 23 testes automatizados.
+
+  **Integração contínua (CI)**
+
+  Foi configurado um workflow com GitHub Actions, localizado em .github/workflows/ci.yml, que executa automaticamente os testes do backend e do frontend em atualizações enviadas à branch main e em pull requests direcionados a essa branch.
+
+  **Executar os testes localmente**
+
+  Backend:
+  ```bash
+    mvn clean test
+  ```
+
+  Frontend:
+  ```bash
+    node --test tests/frontendTest.js
+  ```
 
 <a id="desenvolvedor"></a>
 ## 👨‍💻 Desenvolvedor
